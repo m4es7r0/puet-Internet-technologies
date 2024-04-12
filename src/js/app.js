@@ -2,5 +2,8 @@ import '../scss/app.scss';
 
 /* Your JS Code goes here */
 
-/* Demo JS */
-import './demo.js';
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+  header.classList.toggle('sticky', window.scrollY > 25);
+});
