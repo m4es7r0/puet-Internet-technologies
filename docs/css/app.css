@@ -271,7 +271,8 @@ body > img.cover-bg-image {
 }
 @media screen and (max-width: 1050px) {
   .container {
-    padding: 0px 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -320,6 +321,7 @@ button {
 
 header {
   position: sticky;
+  z-index: 10;
   -webkit-transition: all ease 200ms;
   transition: all ease 200ms;
   top: -15px;
@@ -329,6 +331,8 @@ header.sticky {
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.07);
   /* Прикольний ефект */
 }
 header.sticky > div nav a {
@@ -387,9 +391,11 @@ header > div nav ul {
 main section p {
   color: #737373;
   display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
 }
 main section.hero {
-  padding: 70px 0px;
+  padding-top: 70px;
 }
 main section.hero h1 {
   font-size: 58px;
@@ -463,4 +469,361 @@ main section.hero div:nth-of-type(2) div.card-hero:hover p {
 main section.hero div:nth-of-type(2) div.card-hero:hover svg {
   fill: #fff;
   stroke: #fff;
+}
+main section.why {
+  padding-top: 80px;
+}
+main section.why h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+main section.why p {
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+main section.why > div:nth-of-type(1) {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+main section.why > div:nth-of-type(1) > div.card-why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 30px;
+}
+main section.why > div:nth-of-type(1) > div.card-why h2 {
+  text-shadow: none;
+}
+main section.practice {
+  padding-top: 80px;
+}
+main section.practice h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+}
+main section.practice p {
+  display: block;
+  padding-top: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+main section.practice > div:nth-of-type(1) {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+main section.practice > div:nth-of-type(1) > div.card-practice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+}
+main section.practice > div:nth-of-type(1) > div.card-practice > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+main section.practice > div:nth-of-type(1) > div.card-practice > div h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: start;
+}
+main section.practice > div:nth-of-type(1) > div.card-practice > div p {
+  text-align: start;
+}
+main section.practice > div:nth-of-type(1) > div.card-practice > img {
+  width: 100%;
+  min-height: 145px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.service {
+  background: #fff;
+  padding: 80px 0px;
+}
+main section.service > div:nth-of-type(1) h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+  text-shadow: none;
+}
+main section.service > div:nth-of-type(1) p {
+  display: block;
+  padding-top: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) {
+  padding-top: 80px;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: auto minmax(325px, 1fr);
+}
+@media screen and (max-width: 1050px) {
+  main section.service > div:nth-of-type(1) > div:nth-of-type(1) {
+    grid-template-columns: auto;
+  }
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) {
+  position: relative;
+  cursor: pointer;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1):active > button {
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1).first-click > p {
+  opacity: 0;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1).active > p {
+  opacity: 0;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1).active > button {
+  opacity: 0;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: clamp(55px, 8vw, 170px) !important;
+  height: clamp(55px, 8vw, 170px) !important;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button > svg {
+  width: clamp(55px, 8vw, 170px) !important;
+  height: clamp(55px, 8vw, 170px) !important;
+}
+@media screen and (max-width: 1050px) {
+  main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button {
+    width: clamp(55px, 8vw, 170px) !important;
+    height: clamp(55px, 8vw, 170px) !important;
+  }
+  main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > button > svg {
+    width: clamp(55px, 12vw, 170px) !important;
+    height: clamp(55px, 12vw, 170px) !important;
+  }
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) h2 {
+  text-align: start;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) p {
+  text-align: start;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div.card-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div.card-service > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div.card-service > div h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+main section.service > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div.card-service > div h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+main section.members {
+  padding-top: 80px;
+}
+main section.members > div:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  place-content: center;
+  place-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 30px;
+}
+main section.members > div.members-footer {
+  position: relative;
+  margin-top: 160px;
+  height: 80px;
+  background-color: #252b42;
+}
+@media screen and (max-width: 1050px) {
+  main section.members > div.members-footer {
+    margin-top: 260px;
+  }
+}
+main section.members > div.members-footer > form {
+  position: relative;
+  top: -65px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 50px;
+  background-color: #16697a;
+}
+@media screen and (max-width: 1050px) {
+  main section.members > div.members-footer > form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    top: -165px;
+  }
+}
+main section.members > div.members-footer > form h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+main section.members > div.members-footer > form > div {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+@media screen and (max-width: 545px) {
+  main section.members > div.members-footer > form > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+main section.members > div.members-footer > form > div > input {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 320px;
+}
+@media screen and (max-width: 1050px) {
+  main section.members > div.members-footer > form > div > input {
+    min-width: 160px;
+    padding: 20px 20px;
+  }
+}
+main section.members > div.members-footer > form > div > input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #737373;
+}
+main section.members > div.members-footer > form > div > input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #737373;
+}
+main section.members > div.members-footer > form > div > input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #737373;
+}
+main section.members > div.members-footer > form > div > input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #737373;
+}
+main section.members > div.members-footer > form > div > input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #737373;
+}
+main section.members > div.members-footer > form > div > button {
+  border-left: 1px solid #e6e6e6;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  background-color: #ffa62b;
+  padding: 15px 20px;
+}
+@media screen and (max-width: 545px) {
+  main section.members > div.members-footer > form > div > button {
+    border: none;
+    padding: 10px 20px;
+  }
+}
+main section.get-in-touch {
+  padding-top: 80px;
+}
+main section.get-in-touch h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+  text-shadow: none;
+}
+main section.get-in-touch p {
+  display: block;
+  padding-top: 10px;
+  line-height: 20px;
+  text-align: center;
 }
