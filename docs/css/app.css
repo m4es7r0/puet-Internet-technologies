@@ -434,7 +434,7 @@ main section.hero div:nth-of-type(2) div.card-hero {
 main section.hero div:nth-of-type(2) div.card-hero h3 {
   line-height: 32px;
   letter-spacing: 0.1px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   -webkit-transition: all ease 200ms;
   transition: all ease 200ms;
